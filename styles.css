@@ -1,2 +1,40 @@
 
 /* Your CSS Code here. */
+.holder {
+	display: grid;
+	width: 250px;
+	grid-template-rows:repeat(2,100px);
+	grid-template-columns:repeat(2,100px);
+	gap: 50px;
+	background-color:black;
+	padding: 10px;
+}
+.holder > div {
+	background-color: gray;
+	text-align: center;
+	padding: 40px;
+}
+.item item-1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.item item-2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.item item-3 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.item item-4 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
